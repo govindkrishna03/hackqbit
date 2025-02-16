@@ -7,16 +7,15 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    animation: {
-      fade: 'fadeOut 5s ease-in-out',
-    },
-    keyframes: theme => ({
-      fadeOut: {
-        '0%': { backgroundColor: theme('colors.red.300') },
-        '100%': { backgroundColor: theme('colors.transparent') },
-      },
-    }),
     extend: {
+      animation: {
+        'border': 'border 4s linear infinite',
+      },
+      keyframes: {
+        'border': {
+          to: { '--border-angle': '360deg' },
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

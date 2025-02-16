@@ -1,6 +1,18 @@
 import React from "react";
-import { Montserrat } from "next/font/google";  
-const montserrat = Montserrat({
+import { Poppins,Montserrat,Inter,DM_Sans } from "next/font/google";  
+const poppins = Poppins({
+  weight: ["400"], // Ensure weight is in an array
+  subsets: ["latin"],
+});
+const mont = Montserrat({
+  weight: ["800"], // Ensure weight is in an array
+  subsets: ["latin"],
+});
+const inter = Inter({
+  weight: ["400"], // Ensure weight is in an array
+  subsets: ["latin"],
+});
+const dmsans = DM_Sans({
   weight: ["700"], // Ensure weight is in an array
   subsets: ["latin"],
 });
@@ -20,7 +32,7 @@ const feedItems = [
 function ScrollingFeed() {
 
   return (
-    <div className={`${montserrat.className} w-full overflow-hidden bg-black dark:bg-white text-white dark:text-black sm:h-[40px] h-[20px] text-sm sm:text-[15px] flex items-center`}>
+    <div className={`${dmsans.className} w-full overflow-hidden dark:bg-white text-white dark:text-black sm:h-[40px] h-[20px] text-sm sm:text-[15px] flex items-center `}>
       <div className="flex whitespace-nowrap animate-scroll">
       
         {[...feedItems, ...feedItems].map((item, index) => (

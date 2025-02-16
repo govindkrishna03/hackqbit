@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
   return (
    
     <html lang="en">
-       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <meta name="viewport" content="width=device-width, initial-scale=1 " />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden` }
       >
         {children}
       </body>
