@@ -37,7 +37,7 @@ const Testimonials = () => {
                 Industry Voices on Our Impact and Success
               </span>
             </h1>
-            <div className="h-2 w-48 bg-gradient-to-r from-accent-2 via-accent-1 to-primary rounded"></div>
+            <div className="h-2 w-48 bg-gradient-to-r from-purple-600 via-pink-500 to-red-400 rounded animate-fade-in-left"></div>
           </div>
         </div>
         <div className="flex flex-wrap -m-4">

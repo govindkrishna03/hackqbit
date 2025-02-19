@@ -62,37 +62,50 @@ function Sponsorus() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white">
-       <div className="p-5">
-        <Navbar />
-      </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-            Why Sponsor HackQBit?
-          </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Join us in shaping the future of cybersecurity by becoming a sponsor of one of the most prestigious hackathons in the field.
-          </p>
-        </div>
+  <div className="p-5">
+    <Navbar />
+  </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <SponsorCard
-              key={index}
-              icon={benefit.icon}
-              title={benefit.title}
-              description={benefit.description}
-            />
-          ))}
-        </div>
+  <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20">
+    {/* Title Section */}
+    <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+      {/* Left Side - Title */}
+      <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white to-gray-400 text-transparent bg-clip-text drop-shadow-lg ">
+        Why Sponsor?
+      </h1>
+      
 
-        <div className="mt-16 text-center">
-          <button className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl">
-            Become a Sponsor
-          </button>
-        </div>
+      {/* Right Side - Description */}
+      <div className="max-w-2xl">
+    
+        <p className="text-3xl text-gray-300 leading-relaxed">
+          Join us in shaping the future of cybersecurity by sponsoring one of the most prestigious hackathons in the field.
+        </p>
       </div>
     </div>
+
+    {/* Benefits Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-16">
+      {benefits.map((benefit, index) => (
+        <SponsorCard
+          key={index}
+          icon={benefit.icon}
+          title={benefit.title}
+          description={benefit.description}
+        />
+      ))}
+    </div>
+
+    {/* CTA Button */}
+    <div className="mt-20 text-center">
+      <button className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-10 py-4 rounded-full text-lg font-semibold hover:from-purple-600 hover:to-pink-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+        Become a Sponsor
+      </button>
+    </div>
+  </div>
+</div>
+
+  
   );
 }
 

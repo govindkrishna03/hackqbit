@@ -75,10 +75,6 @@ export default function Home() {
       </div>
 
       {/* Sponsors Section */}
-      <div className="flex flex-col items-center text-white justify-center text-center">
-        <span className={`${montserrat.className} text-2xl md:text-4xl mb-3 font-medium animate-fade-in-left `}>Our Past Sponsors</span>
-        <div className="h-2 w-48 bg-gradient-to-r from-purple-600 via-pink-500 to-red-400 rounded animate-fade-in-left"></div>
-      </div>
 
       {/* Sponsors Carousel Section */}
       <div className="w-screen">
